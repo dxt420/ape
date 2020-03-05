@@ -1,0 +1,45 @@
+<ion-header text-center>
+    <ion-toolbar color="primary">
+      
+        <ion-title >
+            <img alt="logo" height="40"   src="./assets/images/logo.png" > 
+          </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content class="home-content" >
+
+
+
+  <ion-row class="categories-list">
+   
+    <ion-col class="category-item travel-category" size="12">
+      <app-image-shell [mode]="'cover'" class="category-cover" style="height: 65vh;" animation="spinner" [src]="'./assets/images/gorillas/2.jpg'">
+        <!-- <span class="checkbox-title">Mountain Mgahinga National Park</span> -->
+        <span class="checkbox-subtitle1">©</span>
+      </app-image-shell>
+    </ion-col>
+    <ion-col class="category-item fashion-category" size="12">
+      <app-image-shell [mode]="'cover'" class="category-cover" animation="spinner" [src]="'./assets/images/1.jpg'">
+        
+        <app-aspect-ratio [ratio]="{w:4, h:1}">
+            <a class="category-anchor" [routerLink]="['/app/home/wiki']">
+          <span class="checkbox-subtitle">Gorilla-Wiki</span>
+        </a>
+        </app-aspect-ratio>
+      </app-image-shell>
+    </ion-col>
+    <ion-col class="category-item food-category" size="12">
+      <app-image-shell [mode]="'cover'" class="category-cover" animation="spinner" [src]="'./assets/images/2.jpg'">
+        <app-aspect-ratio [ratio]="{w:4, h:1}">
+            <a class="category-anchor" [routerLink]="['/app/home/places']">
+              <span class="checkbox-subtitle">Where to find Gorillas</span>
+            </a>
+         
+        </app-aspect-ratio>
+      </app-image-shell>
+    </ion-col>
+   
+  </ion-row>
+</ion-content>
+

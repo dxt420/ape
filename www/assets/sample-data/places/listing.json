@@ -1,0 +1,95 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "slug": "bwindi",
+      "image": "./assets/images/bwindi/1.jpg",
+      "icon": "./assets/sample-images/travel/TravelIcon1.png",
+      "name": " Bwindi Impenetrable National Park",
+      "category": "National Park",
+      "shortDescription": "A world heritage site.",
+      "description": "The Bwindi Impenetrable Forest is a large primeval forest located in south-western Uganda in the Kanungu District.",
+      "fullDescription": "The Bwindi Impenetrable National Park (BINP) is in southwestern Uganda. The park is part of the Bwindi Impenetrable Forest and is situated along the Democratic Republic of the Congo (DRC) border next to the Virunga National Park and on the edge of the Albertine Rift. Composed of 321 square kilometres (124 sq mi) of both montane and lowland forest, it is accessible only on foot. BINP is a United Nations Educational, Scientific and Cultural Organization-designated World Heritage Site. Species diversity is a feature of the park. It provides habitat for 120 species of mammals, 348 species of birds, 220 species of butterflies, 27 species of frogs, chameleons, geckos, and many endangered species. Floristically, the park is among the most diverse forests in East Africa, with more than 1,000 flowering plant species, including 163 species of trees and 104 species of ferns. The northern (low elevation) sector has many species of Guineo-Congolian flora, including two endangered species, the brown mahogany and Brazzeia longipedicellata. In particular, the area shares in the high levels of endemisms of the Albertine Rift. The park is a sanctuary for colobus monkeys, chimpanzees, and many birds such as hornbills and turacos. It is most notable for the 400 Bwindi gorillas, half of the world's population of the endangered mountain gorillas. 14 habituated mountain gorilla groups are open to tourism in four different sectors of Buhoma, Ruhijja, Rushaga and the Nkuringo in the Districts of Kanungu, Kabale and Kisoro respectively all under the management of Uganda Wildlife Authority.",
+      "rating": 4.8,
+      "address": "Kanungu District, Uganda",
+      "reviewsCount": 17,
+      "tags": [
+        "Mountain",
+        "Forest",
+        "Gorillas",
+        "Weather",
+        "Nature"
+      ],
+  "location": {
+    "address": "Kanungu District, Uganda",
+    "city": "Montevideo, Uruguay",
+    "latlng": "-34.9026348,-56.1814708",
+    "mapImage": "./assets/sample-images/travel/travel-map.png"
+  },
+  "whereToStay": [
+    {
+      "picture": "./assets/sample-images/travel/travel-details-place-1.png",
+      "name": "FOUR POINTS by Sheraton",
+      "rating": 4.1
+    },
+    {
+      "picture": "./assets/sample-images/travel/travel-details-place-2.png",
+      "name": "IBIS Palermo",
+      "rating": 3.8
+    },
+    {
+      "picture": "./assets/sample-images/travel/travel-details-place-3.png",
+      "name": "CONTRA LUZ Hostel",
+      "rating": 4.6
+    },
+    {
+      "picture": "./assets/sample-images/travel/travel-details-place-2.png",
+      "name": "IBIS Palermo",
+      "rating": 3.8
+    },
+    {
+      "picture": "./assets/sample-images/travel/travel-details-place-3.png",
+      "name": "CONTRA LUZ Hostel",
+      "rating": 4.6
+    },
+    {
+      "picture": "./assets/sample-images/travel/travel-details-place-2.png",
+      "name": "IBIS Palermo",
+      "rating": 3.8
+    }
+  ],
+  "whereToEat": [
+    {
+      "picture": "./assets/sample-images/travel/travel-details-eat-1.png",
+      "name": "EL VERDE Resopub",
+      "rating": 4.1
+    },
+    {
+      "picture": "./assets/sample-images/travel/travel-details-eat-2.png",
+      "name": "LA TORTUGUITA Bar",
+      "rating": 4.5
+    },
+    {
+      "picture": "./assets/sample-images/travel/travel-details-eat-3.png",
+      "name": "QUO Pide House",
+      "rating": 4.8
+    }
+  ],
+  "relatedActivities": [
+    {
+      "picture": "./assets/sample-images/travel/travel-details-activity-1.jpg",
+      "name": "Gorilla Trekking",
+      "category": "Greengrocer’s Market",
+      "rating": 4.1
+    },
+    {
+      "picture": "./assets/sample-images/travel/travel-details-activity-2.jpg",
+      "name": "Hiking",
+      "category": "Atractions Park",
+      "rating": 3.6
+    }
+  ]
+    
+    }
+  ]
+}

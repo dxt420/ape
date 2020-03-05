@@ -1,0 +1,58 @@
+<ion-header text-center>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="app/home/wiki"></ion-back-button>
+    </ion-buttons>
+    <ion-title >
+        <img style="padding-right: 56px;" alt="logo" height="40"   src="./assets/images/logo1.png" > 
+      </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="deals-details-content">
+ 
+
+  <div class="details-wrapper">
+    <ion-row class="slider-row">
+      <ion-slides class="details-slides"  [options]="slidesOptions">
+        <ion-slide class="">
+          <ion-row class="slide-inner-row">
+            <app-aspect-ratio [ratio]="{w: 56, h: 40}">
+              <app-image-shell [src]="details.cover" [alt]="'deals details'" class="showcase-image" animation="spinner"></app-image-shell>
+            </app-aspect-ratio>
+          </ion-row>
+        </ion-slide>
+      </ion-slides>
+    </ion-row>
+  
+    <ion-row color="dark" class="promo-row">
+      <h3 class="promo-title">{{details?.slug}}</h3>
+      <ion-col size="12">
+        <p class="promo-description">
+          
+            {{details?.description}}
+        </p>
+      </ion-col>
+      <ion-col size="6">
+        <!-- <ion-button class="promo-code-btn" expand="block" shape="round" fill="outline" color="claim">
+          <span class="promo-code">
+            <app-text-shell [data]="details?.code"></app-text-shell>
+          </span>
+        </ion-button> -->
+      </ion-col>
+      <ion-col size="8">
+        <p class="promo-instructions">
+          Sourced from Wikipedia under Creative Commons License ©
+        </p>
+      </ion-col>
+    </ion-row>
+    <div class="expiration-notice">
+      <span class="notice-message">Last Updated:</span>
+      <span class="expiration-value">
+        <app-text-shell [data]="expirationDate | date:'mediumDate'"></app-text-shell>
+      </span>
+    </div>
+  </div>
+
+
+</ion-content>

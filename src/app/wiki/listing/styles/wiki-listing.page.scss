@@ -1,0 +1,158 @@
+// @import "../../../../theme/mixins/scrollbars";
+
+@import "../../../../theme/mixins/scrollbars";
+// Custom variables
+// Note:  These ones were added by us and have nothing to do with Ionic CSS Custom Properties
+:host {
+  --page-margin: var(--app-narrow-margin);
+
+  --page-categories-gutter: calc(var(--page-margin) / 4);
+
+  --page-category-background: var(--ion-color-medium);
+  --page-category-background-rgb: var(--ion-color-medium-rgb);
+
+  --page-swiper-pagination-space: 40px;
+  --page-swiper-pagination-height: 18px;
+  --page-pagination-bullet-size: 10px;
+
+  --page-first-slide-background: #c1ebff;
+  --page-second-slide-background: #a9ebd2;
+  --page-third-slide-background: #f0cbe5;
+  --page-last-slide-background: #eef3ff;
+
+  --page-vector-decoration-fill: var(--ion-color-light-shade);
+}
+
+
+
+// Note:  All the CSS variables defined below are overrides of Ionic elements CSS Custom Properties
+
+.checkbox-title {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 32px;
+  color: var(--ion-color-lightest);
+  text-align: center;
+  word-break: break-word;
+  overflow: visible;
+
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  // vertically centered
+  top: 80%;
+  transform: translateY(-50%);
+}
+
+.checkbox-subtitle {
+  font-weight: 900;
+  // text-transform: uppercase;
+  font-size: 18px;
+  color: var(--ion-color-lightest);
+  text-align: center;
+  word-break: break-word;
+  overflow: visible;
+
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  // vertically centered
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.checkbox-subtitle1 {
+  font-weight: 900;
+  // text-transform: uppercase;
+  font-size: 22px;
+  color: var(--ion-color-lightest);
+  text-align: center;
+  word-break: break-word;
+  overflow: visible;
+
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  // vertically centered
+  top: 90%;
+  transform: translateY(-50%);
+}
+
+
+.walkthrough-slides {
+  --bullet-background: var(--ion-color-dark);
+  --bullet-background-active: var(--ion-color-dark);
+
+  height: 100%;
+
+  .slide-inner-row {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    // Header space
+    padding-top: var(--app-header-height);
+    // .swiper-pagination space
+    border-bottom: var(--page-swiper-pagination-space) solid transparent;
+    background-clip: padding-box;
+    background-color: var(--page-vector-decoration-fill);
+  }
+} 
+
+.categories-list {
+  --ion-grid-column-padding: var(--page-categories-gutter);
+
+  // padding: calc(var(--page-categories-gutter) * 3);
+  height: 100%;
+  align-content: flex-start;
+  overflow: scroll;
+
+  @include hide-scrollbars();
+
+  .category-item {
+    .category-anchor {
+      height: 100%;
+      text-decoration: none;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      .category-title {
+        margin: auto;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 1px;
+        padding: calc((var(--page-margin) / 4) * 3) var(--page-margin);
+        color: var(--ion-color-lightest);
+        background-color: var(--page-category-background);
+        border-radius: var(--app-fair-radius);
+      }
+    }
+  }
+
+  .travel-category {
+    --page-category-background: #00AFFF;
+    --page-category-background-rgb: 0,175,255;
+  }
+
+  .fashion-category {
+    --page-category-background: #cb328f;
+    --page-category-background-rgb: 203,50,143;
+  }
+
+  .food-category {
+    --page-category-background: #ebbb00;
+    --page-category-background-rgb: 235,187,0;
+  }
+
+  .deals-category {
+    --page-category-background: #70df70;
+    --page-category-background-rgb: 112,223,112;
+  }
+
+  .real-state-category {
+    --page-category-background: #d9453a;
+    --page-category-background-rgb: 217,69,58;
+  }
+}

@@ -1,0 +1,41 @@
+<ion-header text-center>
+    <ion-toolbar color="primary">
+      
+        <ion-title >
+            <img alt="logo" height="40"   src="./assets/images/logo.png" > 
+          </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-content class="home-content" >
+      <!-- <ion-card>
+       <ion-img src="/assets/shapes.svg"></ion-img>
+       <ion-card-header>
+          <ion-card-subtitle>Welcome to our News App</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <p>
+            Enjoy the latest news about these great apes. 
+          </p>
+          <ion-spinner *ngIf="!articles" name="dots"></ion-spinner>
+        </ion-card-content>
+      </ion-card> -->
+          <ion-card *ngFor="let article of articles">
+            <div *ngIf="article.urlToImage">
+                <ion-img src="{{article.urlToImage}}"></ion-img>
+            </div>
+            
+            <ion-card-header>
+              <ion-card-subtitle style="color:black;font-weight:800">{{article.title}}</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <p>
+                {{article.description}}
+              </p>
+              <ion-button color="medium" ion-button fill="outline" href="{{article.url}}" large>Read full article</ion-button>
+  
+            </ion-card-content>
+          </ion-card>
+  
+  </ion-content>

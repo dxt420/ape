@@ -1,0 +1,32 @@
+<ion-header text-center>
+  <ion-toolbar  color="primary">
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="app/home"></ion-back-button>
+        </ion-buttons>
+    <ion-title >
+      <img style="padding-right: 56px;" alt="logo" height="40"   src="./assets/images/logo1.png" > 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <ion-row class="categories-list">
+   
+  
+    <ion-col class="category-item " size="6"  *ngFor="let item of listing.items">
+      
+      <app-image-shell (click)="openDetailsWithState(item)" [mode]="'cover'" class="category-cover" animation="spinner" [src]="item.picture">
+        
+        <app-aspect-ratio [ratio]="{w:1, h:1}">
+            <!-- <a class="category-anchor"  [routerLink]="['/app/home/wiki', item.slug]"> -->
+              
+          <span class="checkbox-subtitle">{{item.slug}}</span>
+        <!-- </a> -->
+        </app-aspect-ratio>
+      </app-image-shell>
+  
+    </ion-col>
+ 
+                  
+  </ion-row>
+</ion-content>

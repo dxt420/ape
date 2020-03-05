@@ -1,0 +1,12 @@
+{
+  "appId": "ape.app.apeapp",
+  "appName": "Appe",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": false
+    }
+  }
+}
